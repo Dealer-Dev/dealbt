@@ -512,7 +512,7 @@ rm -f ${CIDdir}/ress
 } || { 
 echo -e "ACTIVANDO RESELLER $credd FIJO EN BotGEN"
 echo -e "AHORA SE FIJARA $credd EN TODAS LAS KEYS "
-read -p "ENTER PARA VOLVER"
+read -p "ENTER PARA VOLVERh"
 touch ${CIDdir}/ress
 }
 bot_gen
