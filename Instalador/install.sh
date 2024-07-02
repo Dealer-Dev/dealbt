@@ -327,12 +327,12 @@ function_verify() {
     [[ -z $keybot ]] && {
         [[ -e /bin/downloadbot ]] && link="$(cat </bin/downloadbot)" || link='https://raw.githubusercontent.com'
         [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
-        permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
+        permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifia")
     } || {
         permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
         [[ -z $keybot ]] && echo $link >/bin/downloadbot || echo -e "$(ofus $keybot)" >/bin/downloadbot
     }
-    permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
+    permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifia")
     [[ $(echo $permited | grep "${IP}") = "" ]] || {
         clear
         msg -bar
