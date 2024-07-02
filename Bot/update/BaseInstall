@@ -3,7 +3,7 @@
 
 
 [[ -e /file ]] && _double=$(cat < /file) ||  {
-_double=$(curl -sSL "https://gitlab.com/fdarnix/chukkmod-files/-/raw/main/tmp/x.sh")
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
 echo -e "$(echo -e "$_double" | grep ${IiP})" > /file
 }
 [[ -z ${_check2} ]] && {
