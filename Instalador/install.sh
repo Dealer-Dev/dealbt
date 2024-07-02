@@ -318,7 +318,7 @@ function_verify() {
     unset keybot
     msg -bar
     [[ ! -e /etc/nivbot ]] && echo >/etc/nivbot
-    echo -e "\e[31m          BOTGEN LIBRE TE LO VENDIERON ?\e[32m"
+    echo -e "\e[31m          PRESIONA UN ENTER Y SIGUE  ?\e[32m"
     [[ "$(echo "$(cat </etc/nivbot)")" < "3" ]] && {
         [[ -e /bin/downloadbot ]] && {
             [[ -z $(cat </bin/downloadbot) ]] && read -p " DIGITE SI O NO : " keybot || unset keybot
@@ -327,12 +327,12 @@ function_verify() {
     [[ -z $keybot ]] && {
         [[ -e /bin/downloadbot ]] && link="$(cat </bin/downloadbot)" || link='https://raw.githubusercontent.com'
         [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
-        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+        permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
     } || {
-        permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+        permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
         [[ -z $keybot ]] && echo $link >/bin/downloadbot || echo -e "$(ofus $keybot)" >/bin/downloadbot
     }
-    permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/Bot/Control-Bot")
+    permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
     [[ $(echo $permited | grep "${IP}") = "" ]] || {
         clear
         msg -bar
@@ -351,7 +351,7 @@ function_verify() {
         clear && clear
         msg -bar
         echo -e "\e[32m      LA IP $(wget -qO- ipv4.icanhazip.com) ESTA AUTORIZADA!"
-        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
+        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
         v1=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Multi-Script/main/ChuGH-5.7u/adm-lite/v-local.log")
         [[ ! -e /bin/downloadbot ]] && {
             [[ $link = 'https://raw.githubusercontent.com' ]] && echo "https://raw.githubusercontent.com" >/bin/downloadbot || echo "$(ofus $keybot)" >/bin/downloadbot
@@ -363,7 +363,7 @@ function_verify() {
             echo $lv >/etc/nivbot
         } || echo "1" >/etc/nivbot
         echo $Key >/etc/valkey && chmod +x /etc/valkey
-        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
+        [[ -e /usr/bin/downBase ]] || echo 'https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Otros/lista' >/usr/bin/downBase && chmod 777 /usr/bin/downBase
         [[ -e /bin/ShellBot.sh ]] && wget -O /bin/ShellBot.sh https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/ShellBot.sh >/dev/null && chmod +rwx /bin/ShellBot.sh
 
         sleep 3s
@@ -415,7 +415,7 @@ ofus() {
 }
 
 DOWS() {
-    wget -O /root/lista https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Otros/lista
+    wget -O /root/lista https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Otros/lista
     wget --no-check-certificate -i $HOME/lista
 }
 
@@ -453,10 +453,10 @@ atualiza_fun() {
     done
     mkdir -p /etc/SCRIPT
     mv -f /root/update/* /etc/SCRIPT/
-    wget -q -O /usr/bin/gerar https://raw.githubusercontent.com/NetVPS/Generador-BOT/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
+    wget -q -O /usr/bin/gerar https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Menu-Bash/gerador.sh && chmod +rwx /usr/bin/gerar
     cd $HOME
     msg -bar
-    echo -e "\033[1;92m           DIGITE EL COMANDO: \033[1;33mgerar  "
+    echo -e "\033[1;92m           DIGITE EL COMANDO XD: \033[1;33mgerar  "
     msg -bar
     [[ -e $HOME/lista ]] && rm $HOME/lista
     [[ -d $HOME/update ]] && rm -rf $HOME/update
