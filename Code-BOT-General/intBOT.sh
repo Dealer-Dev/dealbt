@@ -57,9 +57,9 @@ msg -bar
 [[ -z $keybot ]] && {
 rm -f /bin/downloadbot
 [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica") 
+permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/vrifica") 
 } || {
-permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
+permited=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verfica")
 }
   [[ $(echo $permited|grep "${IP}") = "" ]] || {
   clear
