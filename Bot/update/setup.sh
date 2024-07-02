@@ -23,7 +23,7 @@ dpkg-reconfigure --frontend non deinteractive tzdata >/dev/null 2>&1
 [[ $(dpkg --get-selections|grep -w "uuid-runtime"|head -1) ]] || apt-get install uuid-runtime -y &>/dev/null
 source <(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/msg-bar/msg)
 
-_double=$(curl -sSL "https://gitlab.com/fdarnix/chukkmod-files/-/raw/main/tmp/x.sh")
+_double=$(curl -sSL "https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica")
 COLS=$(tput cols)
 os_system(){ 
  system=$(cat -n /etc/issue |grep 1 |cut -d ' ' -f6,7,8 |sed 's/1//' |sed 's/      //') 
@@ -61,13 +61,13 @@ clear
 #Key="$(cat /etc/cghkey)"
 Key="$1"
 IiP="$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')"
-[[ ! -e /file ]] && wget -q -O /file https://gitlab.com/fdarnix/chukkmod-files/-/raw/main/tmp/x.sh
+[[ ! -e /file ]] && wget -q -O /file https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/verifica
 _double=$(cat < /file)
 _check2="$(echo -e "$_double" | grep ${IiP})"
 [[ -z ${_check2} ]] && {
 invalid_key '--ban'
 } || {
-[[ -e /etc/adm-lite/cabecalho ]] && source <(curl -sSL 'https://gitlab.com/fdarnix/script/-/raw/main/BaseInstall') '--finish'&&source <(curl -sSL https://gist.githubusercontent.com/drowkid01/11cf6aa86bd5bf6053ee27c3aeab95d9/raw/594c7e244e7827aeeaf99c241efda80ed08fef43/funcao.sh)
+[[ -e /etc/adm-lite/cabecalho ]] && source <(curl -sSL 'https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/update/BaseInstall') '--finish'&&source <(curl -sSL https://gist.githubusercontent.com/drowkid01/11cf6aa86bd5bf6053ee27c3aeab95d9/raw/594c7e244e7827aeeaf99c241efda80ed08fef43/funcao.sh)
 #[[ -e /etc/adm-lite/cabecalho ]] && source autoStart.sh '--finish'
 }
 msg -bar3
