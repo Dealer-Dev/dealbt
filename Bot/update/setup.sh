@@ -485,7 +485,7 @@ tput cuu1 && tput dl1
 done
 }
 #chekKEY
-[[ -e "$(which chukk)" ]] && $(which chukk) || echo -e " INSTALACION NO COMPLETADA CON EXITO !"
+[[ -e "$(which chukk)" ]] && $(which chukk) || echo -e " INSTALACION COMPLETADA CON EXITO !"
 } || {
 echo -e " NO SE RECIBIÓ PARÁMETROS "
 rm -f setup*
