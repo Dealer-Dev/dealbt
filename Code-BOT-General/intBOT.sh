@@ -397,13 +397,13 @@ ID="$(cat /etc/ADM-db/Admin-ID)"
 		echo -e "$bar"
 		read foo
 	} || {
-		MENSAJE="---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n"
+		MENSAJE="---Nuevo Mensaje---\n"
 		MENSAJE+="Esto es un mesaje de prueba!\n"
 		MENSAJE+="$bar\n"
 		URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 		curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &>/dev/null
 		clear
-		echo -e "---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n"
+		echo -e "---Nuevo Mensaje---\n"
 		echo -e "\033[1;37m Mensaje enviado Exitosamente...!"
 		echo -e "$bar"
 		sleep 3s
@@ -464,7 +464,7 @@ read -p " [S/N]: " -e -i s sshsn
 tput cuu1 && tput dl1
 tput cuu1 && tput dl1
 [[ "$sshsn" = @(s|S|y|Y) ]] && addnewmss
-MENSAJE='  ---------📩𝙈𝙀𝙉𝙎𝘼𝙅𝙀 𝙍𝙀𝘾𝙄𝘽𝙄𝘿𝙊📩--------\n'
+MENSAJE='  ---Nuevo Mensaje---\n'
 MENSAJE+="$MSS \n "
 echo -e "$bar"
 echo -e "  \033[1;37mPEGA RUTA DE IMAGEN"
@@ -551,7 +551,7 @@ echo -e "\033[0;35m[\033[0;36m7\033[0;35m] \033[0;35m> \033[1;37m Limite de KEYS
 echo -e "\033[0;35m[\033[0;36m8\033[0;35m] \033[0;35m> \033[1;37m ENLACES $nm | $dn | $ct "
 echo -e "\033[0;35m[\033[0;36m9\033[0;35m] \033[0;35m> \033[1;37m $rfij"
 echo -e "\033[0;35m[\033[0;36m10\033[0;35m] \033[0;35m> \033[1;37m MSG POR ID"
-echo -e "\033[0;35m[\033[0;36m11\033[0;35m] \033[0;35m> \033[1;37m Modificar COSTES DEL BOT"
+echo -e "\033[0;35m[\033[0;36m11\033[0;35m] \033[0;35m> \033[1;37m Modificar COSTOS DEL BOT"
 msg -bar
 echo -e "\033[0;35m[\033[0;36m0\033[0;35m] \033[0;34m<\033[0;33m SALIR"
 msg -bar
