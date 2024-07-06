@@ -1,7 +1,5 @@
 ##!/bin/bashlink
 #Instalador del BOT
-CIDdir=/etc/CAT-BOT && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-DIRSCRIPTC=/etc/cat/casita && [[ ! -d ${DIRSCRIPTC} ]] && mkdir -p ${DIRSCRIPTC}
 DIR="/etc/http-shell"
 coo=1
 IVAR="/etc/http-instas"
@@ -417,24 +415,12 @@ ofus() {
     echo "$txtofus" | rev
 }
 
+
+
 DOWS() {
     wget -O /root/lista https://raw.githubusercontent.com/DanssBot/Generador-BOT/main/Otros/lista
     wget --no-check-certificate -i $HOME/lista
-    mxofca=https://www.dropbox.com/s/o3wyvhaxxb5sj8h/SCRIPTMX.zip
-	wget $mxofc &>/dev/null
-    wget $mxofca &>/dev/null
-    unzip SCRIPTMX.zip &>/dev/null
-    cp SCRIPT-LATAM/* ${DIRSCRIPT}
-    cp SCRIPT/* ${DIRSCRIPTC}
-    [[ ! -e ${DIRSCRIPTC}/ID.txt ]] && touch ${DIRSCRIPTC}/ID.txt
-    chmod +x ${DIRSCRIPT}/*
-    chmod +x ${DIRSCRIPTC}/*
-    rm -rf SCRIPT-LATAM
-    rm -rf SCRIPT
-    sleep 1s
-    sleep 2s
-    echo "ID.txt slowdns.sh ADMbot.sh C-SSR.sh Crear-Demo.sh PDirect.py PGet.py POpen.py PPriv.py PPub.py apacheon.sh blockBT.sh budp.sh dns-netflix.sh dropbear.sh fai2ban.sh message.txt openvpn.sh paysnd.sh ports.sh sockspy.sh speed.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost v2ray.sh python.py" > /etc/newadm-install
-}
+    }
 
 function aguarde() {
     sleep 1
