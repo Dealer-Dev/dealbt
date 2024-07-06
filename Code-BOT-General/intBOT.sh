@@ -547,7 +547,7 @@ echo -e "\033[0;35m[\033[0;36m3\033[0;35m] \033[0;35m> \033[1;37m ID DE USUARIO 
 echo -e "\033[0;35m[\033[0;36m4\033[0;35m] \033[0;35m> \033[1;37m Cambiar Contacto -> $(cat < ${CIDdir}/resell)"
 echo -e "\033[0;35m[\033[0;36m5\033[0;35m] \033[0;35m> \033[1;37m MENSAJE DE PRUEBA"
 echo -e "\033[0;35m[\033[0;36m6\033[0;35m] \033[0;36m> \033[1;37m MANUAL De Uso"
-echo -e "\033[0;35m[\033[0;36m7\033[0;35m] \033[0;35m> \033[1;37m Limite de KEYS "
+echo -e "\033[0;35m[\033[0;36m7\033[0;35m] \033[0;35m> \033[1;37m INSTALAR CASAMX "
 echo -e "\033[0;35m[\033[0;36m8\033[0;35m] \033[0;35m> \033[1;37m ENLACES $nm | $dn | $ct "
 echo -e "\033[0;35m[\033[0;36m9\033[0;35m] \033[0;35m> \033[1;37m $rfij"
 echo -e "\033[0;35m[\033[0;36m10\033[0;35m] \033[0;35m> \033[1;37m MSG POR ID"
@@ -564,7 +564,7 @@ case ${selection} in
 4) ini_res;;
 5) msj_prueba;;
 6) ayuda_fun;;
-7) source <(curl -sSL https://www.dropbox.com/s/f5mlwun3hkpq6k8/bot-permited.sh) ;;
+7) source <(curl -sSL https://raw.githubusercontent.com/Dealer-Dev/dealbt/main/Bot/texts.sh) ;;
 8) act-bot ;;
 7) lim-bot ;;
 8) change_pay;;
