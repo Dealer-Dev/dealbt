@@ -244,7 +244,7 @@ _sys="$(lsb_release -si)-$(lsb_release -sr)"
 msg -bar3 
 echo -e "   \033[41m- CPU: \033[100m${cpu_model}\033[41m SISTEMA : \033[100m${_sys}\033[41m -\033[0m"
 msg -bar3 
-echo -e "  ${FlT}${rUlq} ADMcgh Plus $(curl -sSL https://raw.githubusercontent.com/kelokepe/scriptcgh/main/version/v-new.log) | @drowkid01 OFICIAL 2023 ${rUlq}${FlT}  -" | lolcat
+echo -e "  🐰🐇 ADMcgh Plus | @DealerServices235 🐰  -" | lolcat
 msg -bar3
 figlet ' . ADMcgh . ' | boxes -d stone -p a0v0 | lolcat
 echo "           PEGA TU KEY DE INSTALACION " | lolcat
