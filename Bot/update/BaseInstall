@@ -334,7 +334,7 @@ _check2BOT="$(echo -e "$_double" | grep ${IiP} | awk '{print $5}')"
 _check2RES="$(echo -e "$_double" | grep ${IiP} | awk '{print $7}')"
 msg -bar3
 echo -e ""
-echo -e "${cor[2]}\n\033[1;37m  SCRIPT DESARROLLADO por: @ChumoGH - Henry Chumo" | pv -qL 12
+echo -e "${cor[2]}\n\033[1;37m  SCRIPT DESARROLLADO por: @DealerServices235" | pv -qL 12
 echo -e ""
 msg -bar3
 echo -e "  ${cor[5]} ADM-LITE Mod ChumoGH-ADM REFACTORIZADO 2023" 
